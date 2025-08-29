@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -67,3 +68,7 @@ export default tseslint.config([
   },
 ])
 ```
+=======
+# pokedex-app
+Pokedex hecha con React y TypeScript usando la PokeAPI
+>>>>>>> f05485a426bcea792eb97ba30a1520e739c50556
