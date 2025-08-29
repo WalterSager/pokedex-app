@@ -1,74 +1,52 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# 🎮 Pokédex — React + TypeScript + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web estilo Pokédex que consume la **PokéAPI** para listar Pokémon por páginas y mostrar **detalles en un modal** (stats, tipos, habilidades, altura, peso, etc.).
 
-Currently, two official plugins are available:
+> Proyecto pensado para practicar **React + TypeScript + TailwindCSS**, manejo de **fetching**, **paginación** y **UI accesible**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
+- ✅ Listado de Pokémon con **paginación**.
+- ✅ **Modal de detalles** al hacer click en una card.
+- ✅ Estilos con **TailwindCSS** (responsive y dark-friendly).
+- ✅ Tipado fuerte con **TypeScript**.
+- 🧩 Arquitectura simple: `components/`, `hooks/`, `services/`, `types/`, `utils/`.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧰 Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+API: [PokeAPI](https://pokeapi.co/)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🗂️ Estructura del proyecto (resumen)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
-# pokedex-app
-Pokedex hecha con React y TypeScript usando la PokeAPI
->>>>>>> f05485a426bcea792eb97ba30a1520e739c50556
+src/
+├─ components/
+├─ hooks/
+├─ services/
+├─ types/ 
+├─ utils/
+├─ App.tsx
+└─ main.tsx
+---
+
+## 🚀 Cómo correrlo localmente
+
+```bash
+# 1) Clonar
+git clone https://github.com/WalterSager/pokedex-app.git
+cd pokedex-app
+
+# 2) Instalar dependencias
+npm install
+
+# 3) Ejecutar en desarrollo
+npm run dev
