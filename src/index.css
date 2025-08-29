@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ajustes mínimos de tipografía y fondo */
+:root {
+  color-scheme: light dark;
+}
+html, body, #root {
+  height: 100%;
+}
+body {
+  @apply bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100;
+}
+
+/* Estilos base para <dialog> del modal */
+dialog::backdrop { background: rgba(0,0,0,.5); }
+dialog { border: none; border-radius: 1rem; }
